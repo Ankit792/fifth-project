@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Oct 05 13:40:00 2021
+# Process ID: 10312
+# Log file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/vivado.log
+# Journal file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/full_adder.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+open_wave_config {E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder\ak_4bit_behav.wcfg}
+source ak_4bit.tcl
+restart
+add_force {/ak_4bit/A} -radix bin {1010 0ns}
+add_force {/ak_4bit/B} -radix bin {0011 0ns}
+add_force {/ak_4bit/C0} -radix bin {0 0ns}
+run 40 ns
+restart
+add_force {/ak_4bit/A} -radix bin {1010 0ns}
+add_force {/ak_4bit/B} -radix bin {0011 0ns}
+add_force {/ak_4bit/C0} -radix bin {0 0ns}
+run 40 ns
+add_force {/ak_4bit/A} -radix bin {1000 0ns}
+add_force {/ak_4bit/B} -radix bin {1011 0ns}
+add_force {/ak_4bit/C0} -radix bin {0 0ns}
+run 40 ns
+add_force {/ak_4bit/A} -radix bin {0010 0ns}
+add_force {/ak_4bit/B} -radix bin {0111 0ns}
+add_force {/ak_4bit/C0} -radix bin {1 0ns}
+run 40 ns
+add_force {/ak_4bit/A} -radix bin {0001 0ns}
+add_force {/ak_4bit/B} -radix bin {0101 0ns}
+add_force {/ak_4bit/C0} -radix bin {1 0ns}
+run 40 ns
+close_sim

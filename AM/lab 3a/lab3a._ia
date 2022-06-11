@@ -1,0 +1,1 @@
+--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" --list "lab3a.lst" --xref -o "lab3a.o" "lab3a.asm"

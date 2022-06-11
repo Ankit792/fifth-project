@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "lab12b.o" --strict --scatter "lab12b.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\lab12b.map" -o "lab12b.axf"

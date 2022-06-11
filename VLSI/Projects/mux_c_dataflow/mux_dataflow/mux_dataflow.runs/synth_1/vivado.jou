@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Sep 02 18:34:25 2021
+# Process ID: 1164
+# Log file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/mux_c_dataflow/mux_dataflow/mux_dataflow.runs/synth_1/mux_c.vds
+# Journal file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/mux_c_dataflow/mux_dataflow/mux_dataflow.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mux_c.tcl

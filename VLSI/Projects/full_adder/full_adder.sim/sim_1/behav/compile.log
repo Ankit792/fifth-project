@@ -1,0 +1,7 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/ak_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ak_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/ak_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ak_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/full_adder.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

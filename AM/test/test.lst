@@ -1,0 +1,124 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 area             abc1,code,readonly
+    2 00000000                 export           start
+    3 00000000         start
+    4 00000000 E59F0028        LDR              R0,=data1
+    5 00000004 E59F1028        LDR              R1,=data2
+    6 00000008 E5903000        LDR              R3,[R0]
+    7 0000000C E1A02003        mov              r2,r3
+    8 00000010         
+    9 00000010 E0050392 
+                       m2      mul              r5,r2,r3
+   10 00000014 E0080395 
+                       m3      mul              r8,r5,r3
+   11 00000018         
+   12 00000018 E0856002 
+                       STORE   add              R6,R5,R2
+   13 0000001C E2867001        add              r7,r6,#0x01
+   14 00000020 E0879008        add              r9,r7,r8
+   15 00000024 E5819000        str              r9,[r1]
+   16 00000028         
+   17 00000028 EAFFFFFE 
+                       END1    B                END1
+   18 0000002C         
+   19 0000002C 00000005 
+                       data1   DCD              0X05
+   20 00000030 00000000 
+              00000000         area             abc,data,readwrite
+   21 00000000 00000000 
+                       data2   DCD              0X00
+   22 00000004                 END
+Command Line: --debug --xref --apcs=interwork -otest.o -IC:\Keil\ARM\INC -IC:\K
+eil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=test.lst test.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+END1 00000028
+
+Symbol: END1
+   Definitions
+      At line 17 in file test.asm
+   Uses
+      At line 17 in file test.asm
+Comment: END1 used once
+STORE 00000018
+
+Symbol: STORE
+   Definitions
+      At line 12 in file test.asm
+   Uses
+      None
+Comment: STORE unused
+abc1 00000000
+
+Symbol: abc1
+   Definitions
+      At line 1 in file test.asm
+   Uses
+      None
+Comment: abc1 unused
+data1 0000002C
+
+Symbol: data1
+   Definitions
+      At line 19 in file test.asm
+   Uses
+      At line 4 in file test.asm
+Comment: data1 used once
+m2 00000010
+
+Symbol: m2
+   Definitions
+      At line 9 in file test.asm
+   Uses
+      None
+Comment: m2 unused
+m3 00000014
+
+Symbol: m3
+   Definitions
+      At line 10 in file test.asm
+   Uses
+      None
+Comment: m3 unused
+start 00000000
+
+Symbol: start
+   Definitions
+      At line 3 in file test.asm
+   Uses
+      At line 2 in file test.asm
+Comment: start used once
+7 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+abc 00000000
+
+Symbol: abc
+   Definitions
+      At line 20 in file test.asm
+   Uses
+      None
+Comment: abc unused
+data2 00000000
+
+Symbol: data2
+   Definitions
+      At line 21 in file test.asm
+   Uses
+      At line 5 in file test.asm
+Comment: data2 used once
+2 symbols
+331 symbols in table

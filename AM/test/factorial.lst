@@ -1,0 +1,66 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;FINDING FACTORIAL OF NUMBER WITHOUT LOOKUP TABLE
+    2 00000000         
+    3 00000000                 area             fact_wout_lt,code,readonly
+    4 00000000         ; export start
+    5 00000000         start
+    6 00000000 E3A00003        mov              r0,#3
+    7 00000004 E3A01001        mov              r1,#01
+    8 00000008 E0020190 
+                       back    mul              r2,r0,r1
+    9 0000000C E1A01002        mov              r1,r2
+   10 00000010 E2500001        subs             r0,r0,#01
+   11 00000014 E3500000        cmp              r0,#00
+   12 00000018 1AFFFFFA        bne              back
+   13 0000001C EAFFFFFE 
+                       stop    b                stop
+   14 00000020         
+   15 00000020                 end
+Command Line: --debug --xref --apcs=interwork -ofactorial.o -IC:\Keil\ARM\INC -
+IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=factorial.lst facto
+rial.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+back 00000008
+
+Symbol: back
+   Definitions
+      At line 8 in file factorial.asm
+   Uses
+      At line 12 in file factorial.asm
+Comment: back used once
+fact_wout_lt 00000000
+
+Symbol: fact_wout_lt
+   Definitions
+      At line 3 in file factorial.asm
+   Uses
+      None
+Comment: fact_wout_lt unused
+start 00000000
+
+Symbol: start
+   Definitions
+      At line 5 in file factorial.asm
+   Uses
+      None
+Comment: start unused
+stop 0000001C
+
+Symbol: stop
+   Definitions
+      At line 13 in file factorial.asm
+   Uses
+      At line 13 in file factorial.asm
+Comment: stop used once
+4 symbols
+324 symbols in table

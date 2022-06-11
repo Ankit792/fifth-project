@@ -1,0 +1,118 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Sep 28 16:57:07 2021
+# Process ID: 5076
+# Log file: E:/UJASH/Ujas college/Sem 5/VLSI/Vivado/Flipflop/vivado.log
+# Journal file: E:/UJASH/Ujas college/Sem 5/VLSI/Vivado/Flipflop\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/UJASH/Ujas college/Sem 5/VLSI/Vivado/Flipflop/Flipflop.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source Flipflop_B.tcl
+restart
+add_force {/Flipflop_B/D} -radix bin {10001011 0ns}
+add_force {/Flipflop_B/clk} -radix bin {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_B/reset} -radix bin {0 0ns}
+run 40 ns
+restart
+add_force {/Flipflop_B/D} -radix bin {10001011 0ns}
+add_force {/Flipflop_B/clk} -radix bin {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_B/reset} -radix bin {0 0ns}
+run 10 ns
+add_force {/Flipflop_B/D} -radix bin {10011010 0ns}
+add_force {/Flipflop_B/clk} -radix bin {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_B/reset} -radix bin {1 0ns}
+run 10 ns
+add_force {/Flipflop_B/D} -radix bin {11011011 0ns}
+add_force {/Flipflop_B/clk} -radix bin {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_B/reset} -radix bin {1 0ns}
+run 10 ns
+add_force {/Flipflop_B/D} -radix bin {10001011 0ns}
+add_force {/Flipflop_B/clk} -radix bin {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_B/reset} -radix bin {0 0ns}
+run 10 ns
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Flipflop_C [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Flipflop_C [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_design
+synth_design -rtl -name rtl_1
+launch_simulation
+source Flipflop_C.tcl
+restart
+add_force {/Flipflop_C/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {0 0ns}
+add_force {/Flipflop_C/mode} -radix bin {1 0ns}
+run 40 ns
+restart
+restart
+add_force {/Flipflop_C/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {1 0ns}
+add_force {/Flipflop_C/mode} -radix bin {0 0ns}
+run 40 ns
+restart
+add_force {/Flipflop_C/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {1 0ns}
+add_force {/Flipflop_C/mode} -radix bin {0 0ns}
+run 10 ns
+add_force {/Flipflop_C/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {1 0ns}
+add_force {/Flipflop_C/mode} -radix bin {1 0ns}
+run 10 ns
+add_force {/Flipflop_C/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {1 0ns}
+add_force {/Flipflop_C/mode} -radix bin {0 0ns}
+run 10 ns
+add_force {/Flipflop_C/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {0 0ns}
+add_force {/Flipflop_C/mode} -radix bin {1 0ns}
+run 10 ns
+restart
+add_force {/Flipflop_C/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {1 0ns}
+add_force {/Flipflop_C/mode} -radix bin {0 0ns}
+run 10 ns
+add_force {/Flipflop_C/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {1 0ns}
+add_force {/Flipflop_C/mode} -radix bin {1 0ns}
+run 10 ns
+add_force {/Flipflop_C/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {1 0ns}
+add_force {/Flipflop_C/mode} -radix bin {0 0ns}
+run 10 ns
+add_force {/Flipflop_C/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {0 0ns}
+add_force {/Flipflop_C/mode} -radix bin {0 0ns}
+run 10 ns
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+close_sim

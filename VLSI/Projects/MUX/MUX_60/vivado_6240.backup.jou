@@ -1,0 +1,203 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Sep 16 17:08:08 2021
+# Process ID: 6220
+# Log file: C:/Users/ACER/Desktop/MUX/MUX_60/vivado.log
+# Journal file: C:/Users/ACER/Desktop/MUX/MUX_60\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX_D [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX_D [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs impl_1
+wait_on_run impl_1
+close_design
+launch_simulation
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX_D [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+close_design
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX_D [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_design
+synth_design -rtl -name rtl_1
+launch_simulation
+source MUX_D.tcl
+restart
+add_force {/MUX_D/I0} -radix bin {1 0ns}
+add_force {/MUX_D/I1} -radix bin {0 0ns}
+add_force {/MUX_D/I2} -radix bin {1 0ns}
+add_force {/MUX_D/I3} -radix bin {0 0ns}
+add_force {/MUX_D/S} -radix bin {00 0ns}
+run 10 ns
+add_force {/MUX_D/S} -radix bin {01 0ns}
+run 10 ns
+add_force {/MUX_D/S} -radix bin {10 0ns}
+run 10 ns
+add_force {/MUX_D/S} -radix bin {11 0ns}
+run 10 ns
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX_E [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX_E [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source MUX_E.tcl
+restart
+close_design
+close_sim
+close_sim
+launch_simulation
+source MUX_E.tcl
+restart
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+source MUX_E.tcl
+run all
+restart
+add_force {/MUX_E/I0} -radix bin {1 0ns}
+add_force {/MUX_E/I1} -radix bin {0 0ns}
+add_force {/MUX_E/I2} -radix bin {1 0ns}
+add_force {/MUX_E/I3} -radix bin {1 0ns}
+add_force {/MUX_E/I4} -radix bin {0 0ns}
+add_force {/MUX_E/I5} -radix bin {1 0ns}
+add_force {/MUX_E/I6} -radix bin {0 0ns}
+add_force {/MUX_E/I7} -radix bin {1 0ns}
+add_force {/MUX_E/S} -radix bin {000 0ns}
+run 10 ns
+add_force {/MUX_E/S} -radix bin {001 0ns}
+run 10 ns
+add_force {/MUX_E/S} -radix bin {010 0ns}
+run 10 ns
+add_force {/MUX_E/S} -radix bin {011 0ns}
+run 10 ns
+add_force {/MUX_E/S} -radix bin {100 0ns}
+run 10 ns
+add_force {/MUX_E/S} -radix bin {101 0ns}
+run 10 ns
+add_force {/MUX_E/S} -radix bin {110 0ns}
+run 10 ns
+add_force {/MUX_E/S} -radix bin {111 0ns}
+run 10 ns
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX_F [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX_F [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+close_design
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_design
+synth_design -rtl -name rtl_1
+launch_simulation
+source MUX_F.tcl
+restart
+add_force {/MUX_F/I} -radix bin {1001001001001001 0ns}
+add_force {/MUX_F/S} -radix bin {0000 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {0001 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {0010 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {0011 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {0100 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {0101 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {0110 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {0111 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {1000 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {1001 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {1010 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {1011 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {1100 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {1101 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {1110 0ns}
+run 10 ns
+add_force {/MUX_F/S} -radix bin {1111 0ns}
+run 10 ns
+close_sim
+close [ open C:/Users/ACER/Desktop/MUX/MUX_60/MUX_F8.v w ]
+add_files C:/Users/ACER/Desktop/MUX/MUX_60/MUX_F8.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX_F8 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX_F8 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+close_design

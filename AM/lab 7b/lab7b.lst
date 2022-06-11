@@ -1,0 +1,120 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 area             xyz,code,readonly
+    2 00000000                 export           start
+    3 00000000         start
+    4 00000000 E59F0040        LDR              R0,=data1
+    5 00000004 E59F1040        LDR              R1,=data2
+    6 00000008 E3A03000        MOV              R3,#0X00
+    7 0000000C E4D02001 
+                       BACK    LDRB             R2,[R0],#1
+    8 00000010 E3520000        CMP              R2,#0X00
+    9 00000014 0A000004        BEQ              END1
+   10 00000018 E3520020        CMP              R2,#0X20
+   11 0000001C 0A000000        BEQ              UPPER
+   12 00000020 E2822020        ADD              R2,#0X20
+   13 00000024 E4C12001 
+                       UPPER   STRB             R2,[R1],#1
+   14 00000028 EAFFFFF7        B                BACK
+   15 0000002C EAFFFFFE 
+                       END1    B                END1
+   16 00000030 53 49 4E 
+              47 48 20 
+              41 4E 4B 
+              49 54 4B 
+              55 4D 41 
+              52 20 4D 
+              55 4B 45 
+              53 48 00 data1   DCB              0x53,0x49,0x4E,0x47,0x48,0X20,0
+x41,0x4E,0x4B,0x49,0x54,0x4B,0x55,0x4D,0x41,0x52,0x20,0x4D,0x55,0x4B,0x45,0x53,
+0x48,0x00
+   17 00000048 00000000 
+              00000000         area             xyz1,data,readwrite
+   18 00000000 00      data2   DCB              0X00
+   19 00000001                 END
+Command Line: --debug --xref --apcs=interwork -olab7b.o -IC:\Keil\ARM\INC -IC:\
+Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=lab7b.lst lab7b.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+BACK 0000000C
+
+Symbol: BACK
+   Definitions
+      At line 7 in file lab7b.asm
+   Uses
+      At line 14 in file lab7b.asm
+Comment: BACK used once
+END1 0000002C
+
+Symbol: END1
+   Definitions
+      At line 15 in file lab7b.asm
+   Uses
+      At line 9 in file lab7b.asm
+      At line 15 in file lab7b.asm
+
+UPPER 00000024
+
+Symbol: UPPER
+   Definitions
+      At line 13 in file lab7b.asm
+   Uses
+      At line 11 in file lab7b.asm
+Comment: UPPER used once
+data1 00000030
+
+Symbol: data1
+   Definitions
+      At line 16 in file lab7b.asm
+   Uses
+      At line 4 in file lab7b.asm
+Comment: data1 used once
+start 00000000
+
+Symbol: start
+   Definitions
+      At line 3 in file lab7b.asm
+   Uses
+      At line 2 in file lab7b.asm
+Comment: start used once
+xyz 00000000
+
+Symbol: xyz
+   Definitions
+      At line 1 in file lab7b.asm
+   Uses
+      None
+Comment: xyz unused
+6 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+data2 00000000
+
+Symbol: data2
+   Definitions
+      At line 18 in file lab7b.asm
+   Uses
+      At line 5 in file lab7b.asm
+Comment: data2 used once
+xyz1 00000000
+
+Symbol: xyz1
+   Definitions
+      At line 17 in file lab7b.asm
+   Uses
+      None
+Comment: xyz1 unused
+2 symbols
+330 symbols in table

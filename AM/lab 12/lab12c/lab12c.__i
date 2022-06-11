@@ -1,0 +1,1 @@
+-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" -o "lab12c.o" --omf_browse "lab12c.crf" --depend "lab12c.d" "lab12c.c"

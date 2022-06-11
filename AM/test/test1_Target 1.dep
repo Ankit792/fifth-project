@@ -1,0 +1,7 @@
+Dependencies for Project 'test1', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x60F42995)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o")
+F (.\factorial.asm)(0x60F2B335)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" --list "factorial.lst" --xref -o "factorial.o")
+F (.\division.asm)(0x60F2FB6C)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" --list "division.lst" --xref -o "division.o")
+F (.\data_exchange.asm)(0x60F2B5A4)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" --list "data_exchange.lst" --xref -o "data_exchange.o")
+F (.\addition.asm)(0x60F435E2)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" --list "addition.lst" --xref -o "addition.o")
+F (.\test.asm)(0x60F809E0)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" --list "test.lst" --xref -o "test.o")

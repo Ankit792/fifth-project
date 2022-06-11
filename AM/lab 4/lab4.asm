@@ -1,0 +1,25 @@
+	area abc,code,readonly
+	export start
+start
+	LDR R0,=data1
+	LDR R1,=data2
+	MOV R3,#0X0A
+	MOV R4,#0X00
+UP LDR R2,[R0],#4
+	STR R2,[R1],#4
+	SUBS R3,R3,#0X01
+	BNE UP
+	LDR R1,=data2
+	LDR R6,[R1,#0X1C]
+	STR R6,[R1,#0X18]
+	LDR R6,[R1,#0X20]	
+	STR R6,[R1,#0X1C]
+	LDR R6,[R1,#0X24]
+	STR R6,[R1,#0X20]
+	LDR R6,[R1,#0X28]
+	STR R6,[R1,#0X24]
+END1 B END1
+data1 DCD 0X12579655, 0X86586571, 0X58, 0XAB, 0X22336644, 0X55555555, 0X97, 0X64, 0X98, 0X34
+	area abc1,data,readwrite
+data2 DCD 0X00
+	END

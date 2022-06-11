@@ -1,0 +1,122 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Oct 04 11:36:23 2021
+# Process ID: 11896
+# Log file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/vivado.log
+# Journal file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 682.895 ; gain = 152.059
+update_compile_order -fileset sources_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav/elaborate.log
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'decoder_A' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav'
+"xvlog -m64 -prj decoder_A_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto ace1d4d100474df093b0867723a86515 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot decoder_A_behav xil_defaultlib.decoder_A xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder_A
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot decoder_A_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav/xsim.dir/decoder_A_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3901303730 -regid "210995377_0_0_247" -xml E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/si..."
+    (file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav/xsim.dir/decoder_A_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 04 11:37:20 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 682.895 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "decoder_A_behav -key {Behavioral:sim_1:Functional:decoder_A} -tclbatch {decoder_A.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source decoder_A.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'decoder_A_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 687.555 ; gain = 4.660
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/decoder_A/A} -radix bin {0 0ns}
+add_force {/decoder_A/B} -radix bin {0 0ns}
+add_force {/decoder_A/E} -radix bin {1 0ns}
+run 10 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/decoder_A/A} -radix bin {0 0ns}
+force4
+add_force {/decoder_A/B} -radix bin {0 0ns}
+force5
+add_force {/decoder_A/E} -radix bin {1 0ns}
+force6
+run 10
+add_force {/decoder_A/A} -radix bin {0 0ns}
+force7
+add_force {/decoder_A/B} -radix bin {1 0ns}
+force8
+add_force {/decoder_A/E} -radix bin {1 0ns}
+force9
+run 10 ns
+add_force {/decoder_A/A} -radix bin {1 0ns}
+force10
+add_force {/decoder_A/B} -radix bin {0 0ns}
+force11
+add_force {/decoder_A/E} -radix bin {1 0ns}
+force12
+run 10 ns
+add_force {/decoder_A/A} -radix bin {1 0ns}
+force13
+add_force {/decoder_A/B} -radix bin {1 0ns}
+force14
+add_force {/decoder_A/E} -radix bin {1 0ns}
+force15
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 713.613 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 04 12:27:18 2021...

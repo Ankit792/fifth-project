@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Oct 02 12:56:17 2021
+# Process ID: 8676
+# Log file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/vivado.log
+# Journal file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Flipflop_A [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Flipflop_A [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source Flipflop_A.tcl
+restart
+add_force {/Flipflop_A/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_A/async_reset} -radix bin {1 0ns}
+add_force {/Flipflop_A/D} -radix bin {0 0ns}
+run 10 ns
+add_force {/Flipflop_A/D} -radix bin {1 0ns}
+run 10 ns
+add_force {/Flipflop_A/async_reset} -radix bin {0 0ns}
+run 10 ns
+add_force {/Flipflop_A/D} -radix bin {0 0ns}
+run 10 ns
+close_sim
+close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Flipflop_B [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Flipflop_B [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source Flipflop_B.tcl
+restart
+add_force {/Flipflop_B/D} -radix bin {01010101 0ns}
+add_force {/Flipflop_B/clk} -radix bin {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_B/reset} -radix bin {1 0ns}
+run 10 ns
+add_force {/Flipflop_B/reset} -radix bin {0\ 0ns}
+add_force {/Flipflop_B/reset} -radix bin {0 0ns}
+run 10 ns
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Flipflop_C [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Flipflop_C [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+close_design
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+close_design
+launch_simulation
+source Flipflop_C.tcl
+restart
+add_force {/Flipflop_C/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {0 0ns}
+close_sim

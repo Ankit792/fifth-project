@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Sep 12 11:10:01 2021
+# Process ID: 9268
+# Log file: C:/Users/ACER/Desktop/MUX/MUX_09/MUX_09.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/ACER/Desktop/MUX/MUX_09/MUX_09.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/ACER/Desktop/MUX/MUX_09/MUX_09.sim/sim_1/behav/xsim.dir/MUX_D_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1447366004 -regid "210995377_0_0_247" -xml C:/Users/ACER/Desktop/MUX/MUX_09/MUX_09.sim/sim_1/behav/xsim.dir/MUX_D_behav/web..."
+    (file "C:/Users/ACER/Desktop/MUX/MUX_09/MUX_09.sim/sim_1/behav/xsim.dir/MUX_D_behav/webtalk/xsim_webtalk.tcl" line 32)
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 12 11:10:03 2021...

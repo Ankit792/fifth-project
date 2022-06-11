@@ -1,0 +1,721 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Sep 15 16:46:33 2021
+# Process ID: 11528
+# Log file: C:/Users/ACER/Desktop/MUX/MUX_60/vivado.log
+# Journal file: C:/Users/ACER/Desktop/MUX/MUX_60\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 623.789 ; gain = 88.914
+update_compile_order -fileset sources_1
+set_property top MUX_A [current_fileset]
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2014.4/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_C.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_C.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_D.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_D.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_E.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_E.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_F.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_F.v:1]
+INFO: [filemgmt 20-737] The module currently selected as top, "MUX_A", is instantiated more than once in this source hierarchy. All instantiation nodes will be indicated as top modules, however, only one unique set of source file(s) will be used for synthesis and implementation.
+[Wed Sep 15 17:01:57 2021] Launched synth_1...
+Run output will be captured here: C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.runs/synth_1/runme.log
+launch_runs impl_1
+[Wed Sep 15 17:02:59 2021] Launched impl_1...
+Run output will be captured here: C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.runs/impl_1/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'MUX_D' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+"xvlog -m64 -prj MUX_D_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto bdd0772c1a4d4bc4a3c4288e7ca2a7aa --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MUX_D_behav xil_defaultlib.MUX_D xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX_D
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot MUX_D_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_D_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2847610110 -regid "210995377_0_0_247" -xml C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_D_behav/web..."
+    (file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_D_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 15 17:03:32 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 664.188 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MUX_D_behav -key {Behavioral:sim_1:Functional:MUX_D} -tclbatch {MUX_D.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source MUX_D.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 664.188 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MUX_D_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:33 . Memory (MB): peak = 664.188 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 684.102 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: MUX_A
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:55 ; elapsed = 00:19:55 . Memory (MB): peak = 686.414 ; gain = 527.695
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MUX_A' [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX_A' (1#1) [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:57 ; elapsed = 00:19:57 . Memory (MB): peak = 714.637 ; gain = 555.918
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:57 ; elapsed = 00:19:57 . Memory (MB): peak = 714.637 ; gain = 555.918
+---------------------------------------------------------------------------------
+Loading clock regions from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from E:/vivado/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from E:/vivado/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:02:19 ; elapsed = 00:20:20 . Memory (MB): peak = 1073.238 ; gain = 914.520
+4 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1073.238 ; gain = 389.137
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'MUX_D' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+"xvlog -m64 -prj MUX_D_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto bdd0772c1a4d4bc4a3c4288e7ca2a7aa --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MUX_D_behav xil_defaultlib.MUX_D xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX_D
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot MUX_D_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_D_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3795851841 -regid "210995377_0_0_247" -xml C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_D_behav/web..."
+    (file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_D_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 15 17:07:33 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1075.527 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MUX_D_behav -key {Behavioral:sim_1:Functional:MUX_D} -tclbatch {MUX_D.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source MUX_D.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MUX_D_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1075.527 ; gain = 0.000
+set_property top MUX_A [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1075.527 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'MUX_A' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+"xvlog -m64 -prj MUX_A_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto bdd0772c1a4d4bc4a3c4288e7ca2a7aa --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MUX_A_behav xil_defaultlib.MUX_A xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX_A
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot MUX_A_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_A_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 4280517944 -regid "210995377_0_0_247" -xml C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_A_behav/web..."
+    (file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_A_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 15 17:08:42 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1075.527 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MUX_A_behav -key {Behavioral:sim_1:Functional:MUX_A} -tclbatch {MUX_A.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source MUX_A.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MUX_A_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1075.527 ; gain = 0.000
+add_force {/MUX_A/I0} -radix bin {0 0ns}
+add_force {/MUX_A/I1} -radix bin {1 0ns}
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/MUX_A/I0} -radix bin {0 0ns}
+add_force {/MUX_A/I1} -radix bin {1 0ns}
+add_force {/MUX_A/I2} -radix bin {1 0ns}
+add_force {/MUX_A/I3} -radix bin {0 0ns}
+add_force {/MUX_A/S0} -radix bin {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/MUX_A/S1} -radix bin {1 0ns} {0 100000ps} -repeat_every 200000ps
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1092.254 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+run 100 ns
+set_property top MUX_B [current_fileset]
+update_compile_order -fileset sources_1
+close_design
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1092.254 ; gain = 0.000
+set_property top MUX_B [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_C.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_C.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_D.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_D.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_E.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_E.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_F.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_F.v:1]
+[Wed Sep 15 17:24:44 2021] Launched synth_1...
+Run output will be captured here: C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.runs/synth_1/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'MUX_B' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+"xvlog -m64 -prj MUX_B_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto bdd0772c1a4d4bc4a3c4288e7ca2a7aa --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MUX_B_behav xil_defaultlib.MUX_B xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX_A
+Compiling module xil_defaultlib.MUX_B
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot MUX_B_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_B_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 479215139 -regid "210995377_0_0_247" -xml C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_B_behav/webt..."
+    (file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_B_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 15 17:25:31 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1092.254 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MUX_B_behav -key {Behavioral:sim_1:Functional:MUX_B} -tclbatch {MUX_B.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source MUX_B.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MUX_B_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 1092.254 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: MUX_B
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:16 ; elapsed = 00:39:30 . Memory (MB): peak = 1092.254 ; gain = 933.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MUX_B' [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX_A' [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX_A' (1#1) [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v:23]
+WARNING: [Synth 8-3848] Net OUT_ANKIT in module/entity MUX_B does not have driver. [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v:26]
+INFO: [Synth 8-256] done synthesizing module 'MUX_B' (2#1) [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v:23]
+WARNING: [Synth 8-3331] design MUX_B has unconnected port OUT_ANKIT
+WARNING: [Synth 8-3331] design MUX_B has unconnected port S[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:18 ; elapsed = 00:39:32 . Memory (MB): peak = 1092.254 ; gain = 933.535
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:18 ; elapsed = 00:39:32 . Memory (MB): peak = 1092.254 ; gain = 933.535
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:04:32 ; elapsed = 00:39:45 . Memory (MB): peak = 1092.254 ; gain = 933.535
+6 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1092.254 ; gain = 0.000
+close_design
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1092.254 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_C.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_C.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_D.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_D.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_E.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_E.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_F.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_F.v:1]
+[Wed Sep 15 17:29:47 2021] Launched synth_1...
+Run output will be captured here: C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: MUX_B
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:54 ; elapsed = 00:43:49 . Memory (MB): peak = 1092.254 ; gain = 933.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MUX_B' [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX_A' [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX_A' (1#1) [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX_B' (2#1) [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:55 ; elapsed = 00:43:51 . Memory (MB): peak = 1092.254 ; gain = 933.535
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:55 ; elapsed = 00:43:51 . Memory (MB): peak = 1092.254 ; gain = 933.535
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:05:08 ; elapsed = 00:44:05 . Memory (MB): peak = 1098.742 ; gain = 940.023
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1098.742 ; gain = 6.488
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'MUX_B' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+"xvlog -m64 -prj MUX_B_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto bdd0772c1a4d4bc4a3c4288e7ca2a7aa --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MUX_B_behav xil_defaultlib.MUX_B xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX_A
+Compiling module xil_defaultlib.MUX_B
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot MUX_B_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_B_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2768960380 -regid "210995377_0_0_247" -xml C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_B_behav/web..."
+    (file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_B_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 15 17:31:20 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1101.234 ; gain = 2.492
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MUX_B_behav -key {Behavioral:sim_1:Functional:MUX_B} -tclbatch {MUX_B.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source MUX_B.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MUX_B_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1103.266 ; gain = 4.523
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/MUX_B/I} -radix bin {10101010 0ns}
+add_force {/MUX_B/S} -radix bin {110 0ns} {001 50000ps} -repeat_every 100000ps
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1115.059 ; gain = 0.000
+add_force {/MUX_B/S} -radix bin {000 0ns}
+run 10 ns
+add_force {/MUX_B/S} -radix bin {001 0ns}
+run 10 ns
+add_force {/MUX_B/S} -radix bin {010 0ns}
+run 10 ns
+add_force {/MUX_B/S} -radix bin {011 0ns}
+run 10 ns
+add_force {/MUX_B/S} -radix bin {100 0ns}
+run 10 ns
+add_force {/MUX_B/S} -radix bin {101 0ns}
+run 10 ns
+add_force {/MUX_B/S} -radix bin {111 0ns}
+run 10 ns
+add_force {/MUX_B/S} -radix bin {110 0ns}
+run 10 ns
+set_property top MUX_C [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+close_design
+close_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1123.879 ; gain = 0.000
+set_property top MUX_C [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_A.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_B.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_C.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_C.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_D.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_D.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_E.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_E.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_F.v" into library work [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_F.v:1]
+[Wed Sep 15 18:58:17 2021] Launched synth_1...
+Run output will be captured here: C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.runs/synth_1/runme.log
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/MUX_B_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xelab.pb
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+0
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_runs impl_1
+[Wed Sep 15 19:03:24 2021] Launched impl_1...
+Run output will be captured here: C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: MUX_C
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:06:23 ; elapsed = 02:19:08 . Memory (MB): peak = 1123.879 ; gain = 965.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MUX_C' [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_C.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX_C' (1#1) [C:/Users/ACER/Desktop/MUX/MUX_60/MUX_C.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:06:25 ; elapsed = 02:19:13 . Memory (MB): peak = 1123.879 ; gain = 965.160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:06:25 ; elapsed = 02:19:14 . Memory (MB): peak = 1123.879 ; gain = 965.160
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:06:39 ; elapsed = 02:19:34 . Memory (MB): peak = 1146.070 ; gain = 987.352
+4 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:39 . Memory (MB): peak = 1146.070 ; gain = 22.191
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/MUX_B_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'MUX_C' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+"xvlog -m64 -prj MUX_C_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1146.070 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto bdd0772c1a4d4bc4a3c4288e7ca2a7aa --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MUX_C_behav xil_defaultlib.MUX_C xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX_C
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot MUX_C_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_C_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 62.258 ; gain = 0.016
+
+    while executing
+"webtalk_transmit -clientid 2892450290 -regid "210995377_0_0_247" -xml C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_C_behav/web..."
+    (file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/xsim.dir/MUX_C_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 15 19:09:10 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 1146.070 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MUX_C_behav -key {Behavioral:sim_1:Functional:MUX_C} -tclbatch {MUX_C.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source MUX_C.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MUX_C_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:37 . Memory (MB): peak = 1146.070 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/MUX_C/I} -radix bin {01010101 0ns}
+add_force {/MUX_C/S} -radix bin {000 0ns}
+run 10 ns
+add_force {/MUX_C/S} -radix bin {001 0ns}
+run 10 ns
+add_force {/MUX_C/S} -radix bin {010 0ns}
+run 10 ns
+add_force {/MUX_C/S} -radix bin {011 0ns}
+run 10 ns
+add_force {/MUX_C/S} -radix bin {100 0ns}
+run 10 ns
+add_force {/MUX_C/S} -radix bin {101 0ns}
+run 10 ns
+add_force {/MUX_C/S} -radix bin {110 0ns}
+run 10 ns
+add_force {/MUX_C/S} -radix bin {111 0ns}
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1146.070 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1146.070 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 15 19:15:34 2021...

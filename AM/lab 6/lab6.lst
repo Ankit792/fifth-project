@@ -1,0 +1,66 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 area             xyz,code,readonly
+    2 00000000                 export           start
+    3 00000000         start
+    4 00000000 E3A00101        LDR              R0,=0X40000000
+    5 00000004 E3A01000        MOV              R1,#0X00
+    6 00000008 E3A02001        MOV              R2,#0X01
+    7 0000000C E3A03019        MOV              R3,#0X19
+    8 00000010 E1A05001 
+                       UP      MOV              R5,R1
+    9 00000014 E0814002        ADD              R4,R1,R2
+   10 00000018 E1A01002        MOV              R1,R2
+   11 0000001C E1A02004        MOV              R2,R4
+   12 00000020 E4805004        STR              R5,[R0],#4
+   13 00000024 E2533001        SUBS             R3,R3,#0X01
+   14 00000028 1AFFFFF8        BNE              UP
+   15 0000002C EAFFFFFE 
+                       END1    B                END1
+   16 00000030                 END
+Command Line: --debug --xref --apcs=interwork -olab6.o -IC:\Keil\ARM\INC -IC:\K
+eil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=lab6.lst lab6.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+END1 0000002C
+
+Symbol: END1
+   Definitions
+      At line 15 in file lab6.asm
+   Uses
+      At line 15 in file lab6.asm
+Comment: END1 used once
+UP 00000010
+
+Symbol: UP
+   Definitions
+      At line 8 in file lab6.asm
+   Uses
+      At line 14 in file lab6.asm
+Comment: UP used once
+start 00000000
+
+Symbol: start
+   Definitions
+      At line 3 in file lab6.asm
+   Uses
+      At line 2 in file lab6.asm
+Comment: start used once
+xyz 00000000
+
+Symbol: xyz
+   Definitions
+      At line 1 in file lab6.asm
+   Uses
+      None
+Comment: xyz unused
+4 symbols
+324 symbols in table

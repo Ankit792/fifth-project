@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "lab101.o" --strict --scatter "lab101.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\lab101.map" -o "lab101.axf"

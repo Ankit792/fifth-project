@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Jul 22 19:42:39 2021
+# Process ID: 1184
+# Log file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab_6_adder/lab_6_adder.runs/synth_1/adder.vds
+# Journal file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab_6_adder/lab_6_adder.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source adder.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a200tfbg676-2
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at E:/vivado/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at E:/vivado/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at E:/vivado/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at E:/vivado/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at E:/vivado/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at E:/vivado/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab_6_adder/lab_6_adder.cache/wt [current_project]
+# set_property parent.project_path E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab_6_adder/lab_6_adder.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property board_part xilinx.com:ac701:part0:1.1 [current_project]
+# read_verilog -library xil_defaultlib E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab_6_adder/adder.v
+# catch { write_hwdef -file adder.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top adder -part xc7a200tfbg676-2
+Command: synth_design -top adder -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-1223] The version limit for your license is '2017.12' and will expire in -1299 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+ERROR: [Synth 8-1031] Cin is not declared [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab_6_adder/adder.v:31]
+INFO: [Synth 8-2350] module adder ignored due to previous errors [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab_6_adder/adder.v:23]
+Failed to read verilog 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab_6_adder/adder.v'
+    while executing
+"rt::read_verilog E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab_6_adder/adder.v"
+    invoked from within
+"if {$rt::useElabCache == false} {
+      rt::read_verilog E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab_6_adder/adder.v
+      rt::files..."
+    ("uplevel" body line 22)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    rt::HARTNDb_resetJobStats
+    rt::HARTNDb_startJobS..."
+INFO: [Common 17-83] Releasing license: Synthesis
+4 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+
+    while executing
+"source -notrace {./.Xil/Vivado-1184-DESKTOP-C8UONBB/realtime\adder.tcl}"
+    invoked from within
+"synth_design -top adder -part xc7a200tfbg676-2"
+    (file "adder.tcl" line 20)
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 22 19:42:52 2021...

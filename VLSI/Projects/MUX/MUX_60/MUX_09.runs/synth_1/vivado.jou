@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Sep 12 11:01:24 2021
+# Process ID: 204
+# Log file: C:/Users/ACER/Desktop/MUX/MUX_09/MUX_09.runs/synth_1/MUX_F.vds
+# Journal file: C:/Users/ACER/Desktop/MUX/MUX_09/MUX_09.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MUX_F.tcl

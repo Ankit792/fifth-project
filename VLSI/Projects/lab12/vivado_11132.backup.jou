@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Oct 03 11:59:47 2021
+# Process ID: 6232
+# Log file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab12/vivado.log
+# Journal file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab12\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab12/lab12.xpr
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source FSM.tcl
+restart
+add_force {/FSM/clock} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/FSM/input_D} -radix bin {0 0ns}
+add_force {/FSM/reset} -radix bin {1 0ns}
+add_force {/FSM/input_D} -radix bin {1 0ns}
+run 10 ns
+add_force {/FSM/reset} -radix bin {0 0ns}
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+add_force {/FSM/clock} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/FSM/input_D} -radix bin {1 0ns}
+add_force {/FSM/reset} -radix bin {1 0ns}
+run 10 ns
+add_force {/FSM/reset} -radix bin {0 0ns}
+run 10 ns
+run 10 ns
+add_force {/FSM/input_D} -radix bin {0 0ns}
+run 10 ns
+run 10 ns
+add_force {/FSM/input_D} -radix bin {1 0ns}
+run 10 ns
+add_force {/FSM/input_D} -radix bin {0 0ns}
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim

@@ -1,0 +1,121 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             ABC, CODE, READONLY
+    2 00000000                 EXPORT           START
+    3 00000000         START
+    4 00000000 E59F0050        LDR              R0, =DATA1
+    5 00000004 E59F1050        LDR              R1, =DATA2
+    6 00000008 E59F2050        LDR              R2, =DATA3
+    7 0000000C E3A04005        MOV              R4, #0x05
+    8 00000010 E3A03000        MOV              R3, #0x00
+    9 00000014 E4905004 
+                       UP      LDR              R5,[R0], #4
+   10 00000018 E4916004        LDR              R6,[R1], #4
+   11 0000001C E0853006        ADD              R3, R5, R6
+   12 00000020 E4823004        STR              R3,[R2], #04
+   13 00000024 E2544001        SUBS             R4, R4, #1
+   14 00000028 1AFFFFF9        BNE              UP
+   15 0000002C EAFFFFFE 
+                       END1    B                END1
+   16 00000030 00000001 
+              00000002 
+              00000003 
+              00000004 
+              00000005 DATA1   DCD              0x01, 0x02, 0x03, 0x04, 0x05
+   17 00000044 00000001 
+              00000002 
+              00000003 
+              00000004 
+              00000005 DATA2   DCD              0x01, 0x02, 0x03, 0x04, 0x05
+   18 00000058         
+   19 00000058 00000000 
+              00000000 
+              00000000         AREA             ABC1, DATA, READWRITE
+   20 00000000 00000000 
+                       DATA3   DCD              0x00
+   21 00000004                 END
+Command Line: --debug --xref --apcs=interwork -olab3b.o -IC:\Keil\ARM\INC -IC:\
+Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=lab3b.lst lab3b.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+ABC 00000000
+
+Symbol: ABC
+   Definitions
+      At line 1 in file lab3b.asm
+   Uses
+      None
+Comment: ABC unused
+DATA1 00000030
+
+Symbol: DATA1
+   Definitions
+      At line 16 in file lab3b.asm
+   Uses
+      At line 4 in file lab3b.asm
+Comment: DATA1 used once
+DATA2 00000044
+
+Symbol: DATA2
+   Definitions
+      At line 17 in file lab3b.asm
+   Uses
+      At line 5 in file lab3b.asm
+Comment: DATA2 used once
+END1 0000002C
+
+Symbol: END1
+   Definitions
+      At line 15 in file lab3b.asm
+   Uses
+      At line 15 in file lab3b.asm
+Comment: END1 used once
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 3 in file lab3b.asm
+   Uses
+      At line 2 in file lab3b.asm
+Comment: START used once
+UP 00000014
+
+Symbol: UP
+   Definitions
+      At line 9 in file lab3b.asm
+   Uses
+      At line 14 in file lab3b.asm
+Comment: UP used once
+6 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+ABC1 00000000
+
+Symbol: ABC1
+   Definitions
+      At line 19 in file lab3b.asm
+   Uses
+      None
+Comment: ABC1 unused
+DATA3 00000000
+
+Symbol: DATA3
+   Definitions
+      At line 20 in file lab3b.asm
+   Uses
+      At line 6 in file lab3b.asm
+Comment: DATA3 used once
+2 symbols
+330 symbols in table

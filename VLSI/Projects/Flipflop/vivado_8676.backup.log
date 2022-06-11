@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Sep 30 11:26:38 2021
+# Process ID: 5280
+# Log file: C:/Users/ACER/Desktop/New folder/Flipflop/vivado.log
+# Journal file: C:/Users/ACER/Desktop/New folder/Flipflop\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop.xpr}
+INFO: [Project 1-313] Project file moved from 'E:/UJASH/Ujas college/Sem 5/VLSI/Vivado/Flipflop' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 620.645 ; gain = 105.664
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop_A.v" into library work [C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop_A.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop_B.v" into library work [C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop_B.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop_C.v" into library work [C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop_C.v:1]
+[Thu Sep 30 11:28:51 2021] Launched synth_1...
+Run output will be captured here: C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop.runs/synth_1/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Flipflop_C' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop.sim/sim_1/behav'
+"xvlog -m64 -prj Flipflop_C_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop_C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Flipflop_C
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto c9a48f85b043443db6ab9743970ee733 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Flipflop_C_behav xil_defaultlib.Flipflop_C xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Flipflop_C
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Flipflop_C_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ACER/Desktop/New -notrace
+couldn't read file "C:/Users/ACER/Desktop/New": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 30 11:30:11 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 643.836 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Flipflop_C_behav -key {Behavioral:sim_1:Functional:Flipflop_C} -tclbatch {Flipflop_C.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source Flipflop_C.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Flipflop_C_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 643.836 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/Flipflop_C/clk} -radix bin {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {1 0ns}
+add_force {/Flipflop_C/mode} -radix bin {0 0ns}
+run 10 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/Flipflop_C/clk} -radix bin {0 0ns} {1 5000ps} -repeat_every 10000ps
+force4
+add_force {/Flipflop_C/reset} -radix bin {1 0ns}
+force5
+add_force {/Flipflop_C/mode} -radix bin {0 0ns}
+force6
+run 10 ns
+add_force {/Flipflop_C/reset} -radix bin {0 0ns}
+force7
+add_force {/Flipflop_C/mode} -radix bin {1 0ns}
+force8
+run 10 ns
+add_force {/Flipflop_C/reset} -radix bin {1 0ns}
+force9
+add_force {/Flipflop_C/mode} -radix bin {1 0ns}
+force10
+run 10 ns
+add_force {/Flipflop_C/reset} -radix bin {0 0ns}
+force11
+add_force {/Flipflop_C/mode} -radix bin {0 0ns}
+force12
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 30 11:36:23 2021...

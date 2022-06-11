@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Sep 30 11:26:38 2021
+# Process ID: 5280
+# Log file: C:/Users/ACER/Desktop/New folder/Flipflop/vivado.log
+# Journal file: C:/Users/ACER/Desktop/New folder/Flipflop\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/ACER/Desktop/New folder/Flipflop/Flipflop.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source Flipflop_C.tcl
+restart
+add_force {/Flipflop_C/clk} -radix bin {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {1 0ns}
+add_force {/Flipflop_C/mode} -radix bin {0 0ns}
+run 10 ns
+restart
+add_force {/Flipflop_C/clk} -radix bin {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {1 0ns}
+add_force {/Flipflop_C/mode} -radix bin {0 0ns}
+run 10 ns
+add_force {/Flipflop_C/reset} -radix bin {0 0ns}
+add_force {/Flipflop_C/mode} -radix bin {1 0ns}
+run 10 ns
+add_force {/Flipflop_C/reset} -radix bin {1 0ns}
+add_force {/Flipflop_C/mode} -radix bin {1 0ns}
+run 10 ns
+add_force {/Flipflop_C/reset} -radix bin {0 0ns}
+add_force {/Flipflop_C/mode} -radix bin {0 0ns}
+run 10 ns
+close_sim

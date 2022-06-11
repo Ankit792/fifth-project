@@ -1,0 +1,503 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Oct 02 12:56:17 2021
+# Process ID: 8676
+# Log file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/vivado.log
+# Journal file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 685.785 ; gain = 143.719
+update_compile_order -fileset sources_1
+set_property top Flipflop_A [current_fileset]
+update_compile_order -fileset sources_1
+set_property top Flipflop_A [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_A.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_A.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_B.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_B.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_C.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_C.v:1]
+[Sat Oct 02 13:28:11 2021] Launched synth_1...
+Run output will be captured here: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Flipflop_A
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+2 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+INFO: [Common 17-344] 'synth_design' was cancelled
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Flipflop_A
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND2 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:14]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND2B1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:25]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND2B1L [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:36]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND2B2 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:49]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND3 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:60]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND3B1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:72]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND3B2 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:84]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND3B3 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:96]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND4 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:108]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND4B1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:121]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND4B2 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:134]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND4B3 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:147]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND4B4 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:160]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND5 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:173]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND5B1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:187]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND5B2 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:201]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND5B3 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:215]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND5B4 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:229]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AND5B5 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:243]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module AUTOBUF [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:257]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BIBUF [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:268]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BITSLICE_CONTROL [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:278]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BSCANE2 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:421]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_SPARTAN3 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:451]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_SPARTAN3A [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:470]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_SPARTAN6 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:491]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_VIRTEX4 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:511]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_VIRTEX5 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:528]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BSCAN_VIRTEX6 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:545]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUF [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:566]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFCE_LEAF [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:576]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFCE_ROW [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:591]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFG [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFGCE [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:616]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFGCE_1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:631]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFGCE_DIV [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:642]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFGCTRL [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:660]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFGMUX [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:695]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFGMUX_1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:708]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFGMUX_CTRL [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:721]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFGMUX_VIRTEX4 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:735]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFGP [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:749]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFG_GT [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:759]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFG_GT_SYNC [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:779]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFH [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:795]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFHCE [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:805]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFIO [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:820]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFIO2 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:830]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFMR [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:848]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFMRCE [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:858]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module BUFR [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:873]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module CAPTUREE2 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:889]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_SPARTAN3 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:900]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_SPARTAN3A [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:910]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_VIRTEX4 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:920]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_VIRTEX5 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:930]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module CAPTURE_VIRTEX6 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:940]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module CARRY4 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:950]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module CARRY8 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:968]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module CFGLUT5 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:987]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module CMAC [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:1017]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DCIRESET [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:1826]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DCM [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:1836]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DCM_ADV [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:1882]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DCM_BASE [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:1953]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DCM_PS [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2001]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DCM_SP [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2059]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DNA_PORT [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2104]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DNA_PORTE2 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2118]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DSP48 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2135]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DSP48A [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2208]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DSP48A1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2282]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DSP48E [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2361]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DSP48E1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2478]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DSP48E2 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2612]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module EFUSE_USR [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2764]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FD [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2773]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDC [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2785]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDCE [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2798]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDCE_1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2818]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDCP [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2832]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDCPE [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2849]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDCPE_1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2867]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDCP_1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2885]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDC_1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2902]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDE [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2915]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDE_1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2928]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDP [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2941]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDPE [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2954]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDPE_1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2974]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDP_1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:2988]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDR [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:3001]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDRE [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:3014]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDRE_1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:3034]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDRS [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:3048]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDRSE [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:3066]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDRSE_1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:3086]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDRS_1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:3106]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDR_1 [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:3124]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module FDS [E:/vivado/Vivado/2014.4/scripts/rt/data/unisim_comp.v:3137]
+INFO: [Common 17-14] Message 'Synth 8-2490' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:38 ; elapsed = 00:34:43 . Memory (MB): peak = 749.609 ; gain = 590.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Flipflop_A' [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_A.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Flipflop_A' (1#1) [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_A.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:40 ; elapsed = 00:34:46 . Memory (MB): peak = 774.555 ; gain = 615.723
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:40 ; elapsed = 00:34:46 . Memory (MB): peak = 774.555 ; gain = 615.723
+---------------------------------------------------------------------------------
+Loading clock regions from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from E:/vivado/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from E:/vivado/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:02:01 ; elapsed = 00:35:07 . Memory (MB): peak = 1043.852 ; gain = 885.020
+5 Infos, 0 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1043.852 ; gain = 302.727
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Flipflop_A' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav'
+"xvlog -m64 -prj Flipflop_A_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Flipflop_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto c9a48f85b043443db6ab9743970ee733 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Flipflop_A_behav xil_defaultlib.Flipflop_A xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Flipflop_A
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Flipflop_A_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav/xsim.dir/Flipflop_A_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1171217381 -regid "210995377_0_0_247" -xml E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/..."
+    (file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav/xsim.dir/Flipflop_A_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct 02 13:36:17 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1051.402 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Flipflop_A_behav -key {Behavioral:sim_1:Functional:Flipflop_A} -tclbatch {Flipflop_A.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source Flipflop_A.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Flipflop_A_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1056.008 ; gain = 4.605
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/Flipflop_A/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_A/async_reset} -radix bin {1 0ns}
+add_force {/Flipflop_A/D} -radix bin {0 0ns}
+run 10 ns
+add_force {/Flipflop_A/D} -radix bin {1 0ns}
+run 10 ns
+add_force {/Flipflop_A/async_reset} -radix bin {0 0ns}
+run 10 ns
+add_force {/Flipflop_A/D} -radix bin {0 0ns}
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1063.379 ; gain = 0.000
+close_design
+set_property top Flipflop_B [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top Flipflop_B [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_A.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_A.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_B.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_B.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_C.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_C.v:1]
+[Sat Oct 02 13:46:10 2021] Launched synth_1...
+Run output will be captured here: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Flipflop_B
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:58 ; elapsed = 00:50:35 . Memory (MB): peak = 1063.379 ; gain = 904.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Flipflop_B' [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_B.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Flipflop_B' (1#1) [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_B.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:00 ; elapsed = 00:50:37 . Memory (MB): peak = 1063.379 ; gain = 904.547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:00 ; elapsed = 00:50:37 . Memory (MB): peak = 1063.379 ; gain = 904.547
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:03:13 ; elapsed = 00:50:52 . Memory (MB): peak = 1096.184 ; gain = 937.352
+4 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1096.184 ; gain = 32.805
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Flipflop_B' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav'
+"xvlog -m64 -prj Flipflop_B_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Flipflop_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto c9a48f85b043443db6ab9743970ee733 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Flipflop_B_behav xil_defaultlib.Flipflop_B xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Flipflop_B
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Flipflop_B_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav/xsim.dir/Flipflop_B_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2736416788 -regid "210995377_0_0_247" -xml E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/..."
+    (file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav/xsim.dir/Flipflop_B_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct 02 13:49:47 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1100.473 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Flipflop_B_behav -key {Behavioral:sim_1:Functional:Flipflop_B} -tclbatch {Flipflop_B.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source Flipflop_B.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Flipflop_B_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1103.156 ; gain = 2.684
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/Flipflop_B/D} -radix bin {01010101 0ns}
+add_force {/Flipflop_B/clk} -radix bin {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_B/reset} -radix bin {1 0ns}
+run 10 ns
+add_force {/Flipflop_B/reset} -radix bin {0\ 0ns}
+ERROR: [#UNDEF] /Flipflop_B/reset: Character ' ' is not a legal binary literal.
+add_force {/Flipflop_B/reset} -radix bin {0 0ns}
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1113.477 ; gain = 0.000
+set_property top Flipflop_C [current_fileset]
+update_compile_order -fileset sources_1
+set_property top Flipflop_C [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+close_design
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_A.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_A.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_B.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_B.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_C.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_C.v:1]
+[Sat Oct 02 13:55:01 2021] Launched synth_1...
+Run output will be captured here: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Flipflop_C
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:01 ; elapsed = 01:02:30 . Memory (MB): peak = 1113.477 ; gain = 954.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Flipflop_C' [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_C.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Flipflop_C' (1#1) [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_C.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:02 ; elapsed = 01:02:32 . Memory (MB): peak = 1113.477 ; gain = 954.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:02 ; elapsed = 01:02:32 . Memory (MB): peak = 1113.477 ; gain = 954.645
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:04:14 ; elapsed = 01:02:45 . Memory (MB): peak = 1113.477 ; gain = 954.645
+4 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1113.477 ; gain = 0.000
+close_design
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Flipflop_C' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav'
+"xvlog -m64 -prj Flipflop_C_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop_C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Flipflop_C
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto c9a48f85b043443db6ab9743970ee733 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Flipflop_C_behav xil_defaultlib.Flipflop_C xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Flipflop_C
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Flipflop_C_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav/xsim.dir/Flipflop_C_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2129239444 -regid "210995377_0_0_247" -xml E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/..."
+    (file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav/xsim.dir/Flipflop_C_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct 02 14:00:37 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1113.477 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/Flipflop/Flipflop.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Flipflop_C_behav -key {Behavioral:sim_1:Functional:Flipflop_C} -tclbatch {Flipflop_C.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source Flipflop_C.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Flipflop_C_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1113.477 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/Flipflop_C/clk} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/Flipflop_C/reset} -radix bin {0 0ns}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:42 . Memory (MB): peak = 1113.477 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 02 15:56:33 2021...

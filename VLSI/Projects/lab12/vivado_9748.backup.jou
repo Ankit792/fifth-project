@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Oct 04 12:24:29 2021
+# Process ID: 11132
+# Log file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab12/vivado.log
+# Journal file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab12\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab12/lab12.xpr
+launch_simulation
+source FSM.tcl
+restart
+add_force {/FSM/clock} -radix bin {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/FSM/input_D} -radix bin {1 0ns}
+add_force {/FSM/reset} -radix bin {0 0ns}
+run 10 ns
+restart
+add_force {/FSM/reset} -radix bin {0 0ns}
+run 10 ns
+restart
+add_force {/FSM/input_D} -radix bin {0 0ns}
+run 10 ns
+restart
+add_force {/FSM/input_D} -radix bin {1 0ns}
+add_force {/FSM/clock} -radix bin {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/FSM/reset} -radix bin {1 0ns}
+run 10 ns
+restart
+add_force {/FSM/input_D} -radix bin {1 0ns}
+add_force {/FSM/clock} -radix bin {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/FSM/reset} -radix bin {1 0ns}
+run 10 ns
+add_force {/FSM/input_D} -radix bin {1 0ns}
+add_force {/FSM/reset} -radix bin {0 0ns}
+run 10 ns
+add_force {/FSM/input_D} -radix bin {0 0ns}
+run 10 ns
+add_force {/FSM/input_D} -radix bin {1 0ns}
+run 10 ns
+add_force {/FSM/input_D} -radix bin {0 0ns}
+run 10 ns
+add_force {/FSM/input_D} -radix bin {0 0ns}
+run 10 ns
+open_run impl_1
+close [ open E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab12/n.xdc w ]
+import_files -fileset constrs_1 E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab12/n.xdc
+add_files -fileset constrs_1 -norecurse E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab12/n.xdc
+import_files -fileset constrs_1 E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab12/n.xdc
+set_property target_constrs_file E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/lab12/lab12.srcs/constrs_1/imports/lab12/n.xdc [current_fileset -constrset]
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
+run 10 ns
+close_sim

@@ -1,0 +1,15 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\PROJECT\sem5\AM\lab 10\lab10.uvproj
+Project File Date:  07/22/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+linking...
+lab10.axf: Error: L6200E: Symbol __ARM_use_no_argv multiply defined (by lab101.o and lab10.o).
+lab10.axf: Error: L6200E: Symbol delay multiply defined (by lab101.o and lab10.o).
+lab10.axf: Error: L6200E: Symbol main multiply defined (by lab101.o and lab10.o).
+Target not created

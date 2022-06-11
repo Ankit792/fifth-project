@@ -1,0 +1,16 @@
+	area xyz,code,readonly
+	export start
+start
+	LDR R0,=0X40000000
+	MOV R1,#0X00
+	MOV R2,#0X01
+	MOV R3,#0X19
+UP  MOV R5,R1
+	ADD R4,R1,R2
+	MOV R1,R2
+	MOV R2,R4
+	STR R5,[R0],#4
+	SUBS R3,R3,#0X01
+	BNE UP
+END1 B END1
+	END

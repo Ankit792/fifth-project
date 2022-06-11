@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Sep 15 10:06:34 2021
+# Process ID: 2492
+# Log file: C:/Users/ACER/Desktop/MUX/MUX_09/vivado.log
+# Journal file: C:/Users/ACER/Desktop/MUX/MUX_09\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ACER/Desktop/MUX/MUX_09/MUX_60.xpr
+update_compile_order -fileset sources_1

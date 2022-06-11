@@ -1,0 +1,5 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_F8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_F8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ACER/Desktop/MUX/MUX_60/MUX_60.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

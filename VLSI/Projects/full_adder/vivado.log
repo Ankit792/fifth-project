@@ -1,0 +1,134 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Oct 05 13:40:00 2021
+# Process ID: 10312
+# Log file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/vivado.log
+# Journal file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/full_adder.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:16 . Memory (MB): peak = 675.469 ; gain = 138.922
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/ak_1bit.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/ak_1bit.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/ak_4bit.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/ak_4bit.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/ak_8bit.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/ak_8bit.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/ak_adderSub_8bit.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/ak_adderSub_8bit.v:1]
+INFO: [filemgmt 20-737] The module currently selected as top, "ak_4bit", is instantiated more than once in this source hierarchy. All instantiation nodes will be indicated as top modules, however, only one unique set of source file(s) will be used for synthesis and implementation.
+[Tue Oct 05 13:41:52 2021] Launched synth_1...
+Run output will be captured here: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/full_adder.runs/synth_1/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ak_4bit' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/full_adder.sim/sim_1/behav'
+"xvlog -m64 -prj ak_4bit_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/ak_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ak_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/ak_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ak_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/full_adder.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/full_adder.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 47f3cc06bfc149cba3dd393945ede236 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ak_4bit_behav xil_defaultlib.ak_4bit xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ak_1bit
+Compiling module xil_defaultlib.ak_4bit
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot ak_4bit_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/full_adder.sim/sim_1/behav/xsim.dir/ak_4bit_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3019133002 -regid "210995377_0_0_247" -xml E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/full_adder...."
+    (file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/full_adder.sim/sim_1/behav/xsim.dir/ak_4bit_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 05 13:42:46 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 688.477 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder/full_adder.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ak_4bit_behav -key {Behavioral:sim_1:Functional:ak_4bit} -tclbatch {ak_4bit.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config {E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/full_adder\ak_4bit_behav.wcfg}
+source ak_4bit.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ak_4bit_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 690.066 ; gain = 1.590
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/ak_4bit/A} -radix bin {1010 0ns}
+add_force {/ak_4bit/B} -radix bin {0011 0ns}
+add_force {/ak_4bit/C0} -radix bin {0 0ns}
+run 40 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/ak_4bit/A} -radix bin {1010 0ns}
+force4
+add_force {/ak_4bit/B} -radix bin {0011 0ns}
+force5
+add_force {/ak_4bit/C0} -radix bin {0 0ns}
+force6
+run 40 ns
+add_force {/ak_4bit/A} -radix bin {1000 0ns}
+force7
+add_force {/ak_4bit/B} -radix bin {1011 0ns}
+force8
+add_force {/ak_4bit/C0} -radix bin {0 0ns}
+force9
+run 40 ns
+add_force {/ak_4bit/A} -radix bin {0010 0ns}
+force10
+add_force {/ak_4bit/B} -radix bin {0111 0ns}
+force11
+add_force {/ak_4bit/C0} -radix bin {1 0ns}
+force12
+run 40 ns
+add_force {/ak_4bit/A} -radix bin {0001 0ns}
+force13
+add_force {/ak_4bit/B} -radix bin {0101 0ns}
+force14
+add_force {/ak_4bit/C0} -radix bin {1 0ns}
+force15
+run 40 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 705.574 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 05 13:49:10 2021...

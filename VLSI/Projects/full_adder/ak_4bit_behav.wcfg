@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ak_4bit_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ak_4bit" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject db_ref_id="1" fp_name="/ak_4bit/A" type="array">
+      <obj_property name="ElementShortName">A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">A[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ak_4bit/B" type="array">
+      <obj_property name="ElementShortName">B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ak_4bit/C0" type="logic">
+      <obj_property name="ElementShortName">C0</obj_property>
+      <obj_property name="ObjectShortName">C0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ak_4bit/ankit_sum" type="array">
+      <obj_property name="ElementShortName">ankit_sum[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ankit_sum[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ak_4bit/C4" type="logic">
+      <obj_property name="ElementShortName">C4</obj_property>
+      <obj_property name="ObjectShortName">C4</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ak_4bit/c1" type="logic">
+      <obj_property name="ElementShortName">c1</obj_property>
+      <obj_property name="ObjectShortName">c1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ak_4bit/c2" type="logic">
+      <obj_property name="ElementShortName">c2</obj_property>
+      <obj_property name="ObjectShortName">c2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ak_4bit/c3" type="logic">
+      <obj_property name="ElementShortName">c3</obj_property>
+      <obj_property name="ObjectShortName">c3</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,46 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             one, CODE, READONLY
+    2 00000000                 EXPORT           START
+    3 00000000         
+    4 00000000         START
+    5 00000000 E3E01000        MOV              R1,#0xffffffff
+    6 00000004 E3A02012        MOV              R2,#0x12
+    7 00000008 E1A03002        MOV              R3,R2
+    8 0000000C E0814002        ADD              R4,R1,R2
+    9 00000010 E0415002        SUB              R5,R1,R2
+   10 00000014 E0060291        MUL              R6,R1,R2
+   11 00000018 E0017002        AND              R7,R1,R2
+   12 0000001C E1818002        ORR              R8,R1,R2
+   13 00000020 E0219002        EOR              R9,R1,R2
+   14 00000024                 END
+Command Line: --debug --xref --apcs=interwork -olab2.o -IC:\Keil\ARM\INC -IC:\K
+eil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=lab2.lst lab2.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 4 in file lab2.asm
+   Uses
+      At line 2 in file lab2.asm
+Comment: START used once
+one 00000000
+
+Symbol: one
+   Definitions
+      At line 1 in file lab2.asm
+   Uses
+      None
+Comment: one unused
+2 symbols
+322 symbols in table

@@ -1,0 +1,69 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;DATA EXCHANGE
+    2 00000000                 area             data_exch,code,readonly
+    3 00000000         ;   export start
+    4 00000000         start
+    5 00000000 E3A00101        ldr              r0,=0x40000000
+    6 00000004 E59F1024        ldr              r1,=0x40000044
+    7 00000008 E3A04009        mov              r4,#09
+    8 0000000C E5902000 
+                       loop    ldr              r2,[r0]
+    9 00000010 E1A05002        mov              r5,r2
+   10 00000014 E5916000        ldr              r6,[r1]
+   11 00000018 E4806004        str              r6,[r0],#04
+   12 0000001C E4815004        str              r5,[r1],#04
+   13 00000020 E2544001        subs             r4,#01
+   14 00000024 E3540000        cmp              r4,#00
+   15 00000028 1AFFFFF7        bne              loop
+   16 0000002C EAFFFFFE 
+                       stop    b                stop
+   17 00000030                 end
+              40000044 
+Command Line: --debug --xref --apcs=interwork -odata_exchange.o -IC:\Keil\ARM\I
+NC -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=data_exchange.l
+st data_exchange.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+data_exch 00000000
+
+Symbol: data_exch
+   Definitions
+      At line 2 in file data_exchange.asm
+   Uses
+      None
+Comment: data_exch unused
+loop 0000000C
+
+Symbol: loop
+   Definitions
+      At line 8 in file data_exchange.asm
+   Uses
+      At line 15 in file data_exchange.asm
+Comment: loop used once
+start 00000000
+
+Symbol: start
+   Definitions
+      At line 4 in file data_exchange.asm
+   Uses
+      None
+Comment: start unused
+stop 0000002C
+
+Symbol: stop
+   Definitions
+      At line 16 in file data_exchange.asm
+   Uses
+      At line 16 in file data_exchange.asm
+Comment: stop used once
+4 symbols
+326 symbols in table

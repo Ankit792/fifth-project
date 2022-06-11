@@ -1,0 +1,67 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;BLOCK OF DATA TRANSFER
+    2 00000000                 area             data_trans,code,readonly
+    3 00000000                 export           start
+    4 00000000         start
+    5 00000000 E3A00101        ldr              r0,=0x40000000
+    6 00000004 E59F1018        ldr              r1,=0x40000044
+    7 00000008 E3A04009        mov              r4,#09
+    8 0000000C         
+    9 0000000C E4902004 
+                       loop    ldr              r2,[r0],#04
+   10 00000010 E4812004        str              r2,[r1],#04
+   11 00000014 E2544001        subs             r4,#01
+   12 00000018 E3540000        cmp              r4,#00
+   13 0000001C 1AFFFFFA        bne              loop
+   14 00000020 EAFFFFFE 
+                       stop    b                stop
+   15 00000024                 end
+              40000044 
+Command Line: --debug --xref --apcs=interwork -odata_transfer.o -IC:\Keil\ARM\I
+NC -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=data_transfer.l
+st data_transfer.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+data_trans 00000000
+
+Symbol: data_trans
+   Definitions
+      At line 2 in file data_transfer.asm
+   Uses
+      None
+Comment: data_trans unused
+loop 0000000C
+
+Symbol: loop
+   Definitions
+      At line 9 in file data_transfer.asm
+   Uses
+      At line 13 in file data_transfer.asm
+Comment: loop used once
+start 00000000
+
+Symbol: start
+   Definitions
+      At line 4 in file data_transfer.asm
+   Uses
+      At line 3 in file data_transfer.asm
+Comment: start used once
+stop 00000020
+
+Symbol: stop
+   Definitions
+      At line 14 in file data_transfer.asm
+   Uses
+      At line 14 in file data_transfer.asm
+Comment: stop used once
+4 symbols
+326 symbols in table

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="adder_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="adder" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject db_ref_id="1" fp_name="/adder/A" type="array">
+      <obj_property name="ElementShortName">A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/adder/B" type="array">
+      <obj_property name="ElementShortName">B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/adder/Cin" type="logic">
+      <obj_property name="ElementShortName">Cin</obj_property>
+      <obj_property name="ObjectShortName">Cin</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/adder/Sum" type="array">
+      <obj_property name="ElementShortName">Sum[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Sum[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/adder/Cout" type="logic">
+      <obj_property name="ElementShortName">Cout</obj_property>
+      <obj_property name="ObjectShortName">Cout</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/adder/result" type="array">
+      <obj_property name="ElementShortName">result[8:0]</obj_property>
+      <obj_property name="ObjectShortName">result[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

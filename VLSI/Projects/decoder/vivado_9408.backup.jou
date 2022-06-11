@@ -1,0 +1,258 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Sep 27 18:10:26 2021
+# Process ID: 9228
+# Log file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/vivado.log
+# Journal file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.xpr
+update_compile_order -fileset sources_1
+close [ open E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v w ]
+add_files E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+close_design
+launch_simulation
+source decoder_A.tcl
+restart
+add_force {/decoder_A/E} -radix bin {1 0ns}
+add_force {/decoder_A/A} -radix bin {0 0ns}
+add_force {/decoder_A/B} -radix bin {0 0ns}
+run 10 ns
+restart
+add_force {/decoder_A/E} -radix bin {1 0ns}
+add_force {/decoder_A/A} -radix bin {0 0ns}
+add_force {/decoder_A/B} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_A/E} -radix bin {1 0ns}
+add_force {/decoder_A/A} -radix bin {0 0ns}
+add_force {/decoder_A/B} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_A/E} -radix bin {1 0ns}
+add_force {/decoder_A/A} -radix bin {1 0ns}
+add_force {/decoder_A/B} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_A/E} -radix bin {1 0ns}
+add_force {/decoder_A/A} -radix bin {1 0ns}
+add_force {/decoder_A/B} -radix bin {1 0ns}
+run 10 ns
+synth_design -rtl -name rtl_1
+close_design
+close_sim
+close [ open E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v w ]
+add_files E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder_B [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder_B [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+close_design
+close [ open E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_C.v w ]
+add_files E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_C.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder_C [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder_C [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+close_design
+launch_simulation
+source decoder_C.tcl
+restart
+add_force {/decoder_C/x} -radix bin {000 0ns}
+run 10 ns
+restart
+add_force {/decoder_C/x} -radix bin {000 0ns}
+run 10 ns
+add_force {/decoder_C/x} -radix bin {001 0ns}
+run 10 ns
+add_force {/decoder_C/x} -radix bin {010 0ns}
+run 10 ns
+add_force {/decoder_C/x} -radix bin {011 0ns}
+run 10 ns
+add_force {/decoder_C/x} -radix bin {100 0ns}
+run 10 ns
+add_force {/decoder_C/x} -radix bin {101 0ns}
+run 10 ns
+add_force {/decoder_C/x} -radix bin {110 0ns}
+run 10 ns
+add_force {/decoder_C/x} -radix bin {111 0ns}
+run 10 ns
+close_sim
+close [ open E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_D.v w ]
+add_files E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_D.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder_D [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder_D [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source decoder_D.tcl
+restart
+add_force {/decoder_D/A} -radix bin {1 0ns}
+add_force {/decoder_D/A} -radix bin {0 0ns}
+add_force {/decoder_D/B} -radix bin {0 0ns}
+add_force {/decoder_D/C} -radix bin {0 0ns}
+run 10 ns
+restart
+add_force {/decoder_D/A} -radix bin {0 0ns}
+add_force {/decoder_D/B} -radix bin {0 0ns}
+add_force {/decoder_D/C} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {0 0ns}
+add_force {/decoder_D/B} -radix bin {0 0ns}
+add_force {/decoder_D/C} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {0 0ns}
+add_force {/decoder_D/B} -radix bin {1 0ns}
+add_force {/decoder_D/C} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {0 0ns}
+add_force {/decoder_D/B} -radix bin {1 0ns}
+add_force {/decoder_D/C} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {1 0ns}
+add_force {/decoder_D/B} -radix bin {0 0ns}
+add_force {/decoder_D/C} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {1 0ns}
+add_force {/decoder_D/B} -radix bin {0 0ns}
+add_force {/decoder_D/C} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {1 0ns}
+add_force {/decoder_D/B} -radix bin {1 0ns}
+add_force {/decoder_D/C} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {1 0ns}
+add_force {/decoder_D/B} -radix bin {1 0ns}
+add_force {/decoder_D/C} -radix bin {1 0ns}
+run 10 ns
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_design
+launch_runs impl_1
+wait_on_run impl_1
+synth_design -rtl -name rtl_1
+close_design
+launch_simulation
+source decoder_D.tcl
+restart
+restart
+add_force {/decoder_D/A} -radix bin {0 0ns}
+add_force {/decoder_D/B} -radix bin {0 0ns}
+add_force {/decoder_D/C} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {0 0ns}
+add_force {/decoder_D/B} -radix bin {0 0ns}
+add_force {/decoder_D/C} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {0 0ns}
+add_force {/decoder_D/B} -radix bin {1 0ns}
+add_force {/decoder_D/C} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {0 0ns}
+add_force {/decoder_D/B} -radix bin {1 0ns}
+add_force {/decoder_D/C} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {1 0ns}
+add_force {/decoder_D/B} -radix bin {0 0ns}
+add_force {/decoder_D/C} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {1 0ns}
+add_force {/decoder_D/B} -radix bin {0 0ns}
+add_force {/decoder_D/C} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {1 0ns}
+add_force {/decoder_D/B} -radix bin {1 0ns}
+add_force {/decoder_D/C} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_D/A} -radix bin {1 0ns}
+add_force {/decoder_D/B} -radix bin {1 0ns}
+add_force {/decoder_D/C} -radix bin {1 0ns}
+run 10 ns
+close_sim
+close [ open E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_E.v w ]
+add_files E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_E.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder_E [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder_E [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+remove_files E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_E.v
+add_files -norecurse E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_E.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1

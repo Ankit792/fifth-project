@@ -1,0 +1,210 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Oct 02 14:04:06 2021
+# Process ID: 9408
+# Log file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/vivado.log
+# Journal file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder_B [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder_B [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source decoder_B.tcl
+restart
+add_force {/decoder_B/A} -radix bin {0 0ns}
+add_force {/decoder_B/B} -radix bin {0 0ns}
+add_force {/decoder_B/E} -radix bin {00 0ns}
+run 10 ns
+restart
+run 10 ns
+add_bp E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v 41
+remove_bps -file E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v -line 41
+add_bp E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v 41
+close_design
+close_sim
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source decoder_B.tcl
+restart
+add_force {/decoder_B/E} -radix bin {1 0ns}
+add_force {/decoder_B/A} -radix bin {0 0ns}
+add_force {/decoder_B/B} -radix bin {0 0ns}
+add_force {/decoder_B/C} -radix bin {0 0ns}
+run 10 ns
+restart
+add_force {/decoder_B/E} -radix bin {1 0ns}
+add_force {/decoder_B/A} -radix bin {0 0ns}
+add_force {/decoder_B/B} -radix bin {0 0ns}
+add_force {/decoder_B/C} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+add_force {/decoder_B/A} -radix bin {0 0ns}
+add_force {/decoder_B/B} -radix bin {0 0ns}
+add_force {/decoder_B/C} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+add_force {/decoder_B/A} -radix bin {0 0ns}
+add_force {/decoder_B/B} -radix bin {1 0ns}
+add_force {/decoder_B/C} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+add_force {/decoder_B/A} -radix bin {0 0ns}
+add_force {/decoder_B/B} -radix bin {1 0ns}
+add_force {/decoder_B/C} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+add_force {/decoder_B/A} -radix bin {1 0ns}
+add_force {/decoder_B/B} -radix bin {0 0ns}
+add_force {/decoder_B/C} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+add_force {/decoder_B/A} -radix bin {1 0ns}
+add_force {/decoder_B/B} -radix bin {0 0ns}
+add_force {/decoder_B/C} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+add_force {/decoder_B/A} -radix bin {1 0ns}
+add_force {/decoder_B/B} -radix bin {1 0ns}
+add_force {/decoder_B/C} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+add_force {/decoder_B/A} -radix bin {1 0ns}
+add_force {/decoder_B/B} -radix bin {1 0ns}
+add_force {/decoder_B/C} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_B/E} -radix bin {0 0ns}
+add_force {/decoder_B/A} -radix bin {1 0ns}
+add_force {/decoder_B/B} -radix bin {1 0ns}
+add_force {/decoder_B/C} -radix bin {1 0ns}
+run 10 ns
+close_sim
+close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder_E [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder_E [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source decoder_E.tcl
+restart
+add_force {/decoder_E/A} -radix bin {1 0ns}
+restart
+add_force {/decoder_E/A} -radix bin {0 0ns}
+add_force {/decoder_E/B} -radix bin {0 0ns}
+add_force {/decoder_E/C} -radix bin {0 0ns}
+add_force {/decoder_E/E} -radix bin {0 0ns}
+run 10 ns
+restart
+add_force {/decoder_E/A} -radix bin {0 0ns}
+add_force {/decoder_E/B} -radix bin {0 0ns}
+add_force {/decoder_E/C} -radix bin {0 0ns}
+add_force {/decoder_E/E} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+add_force {/decoder_E/B} -radix bin {0 0ns}
+add_force {/decoder_E/C} -radix bin {0 0ns}
+add_force {/decoder_E/E} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+add_force {/decoder_E/B} -radix bin {0 0ns}
+add_force {/decoder_E/C} -radix bin {1 0ns}
+add_force {/decoder_E/E} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+add_force {/decoder_E/B} -radix bin {0 0ns}
+add_force {/decoder_E/C} -radix bin {1 0ns}
+add_force {/decoder_E/E} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+add_force {/decoder_E/B} -radix bin {1 0ns}
+add_force {/decoder_E/C} -radix bin {0 0ns}
+add_force {/decoder_E/E} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+add_force {/decoder_E/B} -radix bin {1 0ns}
+add_force {/decoder_E/C} -radix bin {0 0ns}
+add_force {/decoder_E/E} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+add_force {/decoder_E/B} -radix bin {1 0ns}
+add_force {/decoder_E/C} -radix bin {1 0ns}
+add_force {/decoder_E/E} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+add_force {/decoder_E/B} -radix bin {1 0ns}
+add_force {/decoder_E/C} -radix bin {1 0ns}
+add_force {/decoder_E/E} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+add_force {/decoder_E/B} -radix bin {0 0ns}
+add_force {/decoder_E/C} -radix bin {0 0ns}
+add_force {/decoder_E/E} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+add_force {/decoder_E/B} -radix bin {0 0ns}
+add_force {/decoder_E/C} -radix bin {0 0ns}
+add_force {/decoder_E/E} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+add_force {/decoder_E/B} -radix bin {0 0ns}
+add_force {/decoder_E/C} -radix bin {1 0ns}
+add_force {/decoder_E/E} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+add_force {/decoder_E/B} -radix bin {0 0ns}
+add_force {/decoder_E/C} -radix bin {1 0ns}
+add_force {/decoder_E/E} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+add_force {/decoder_E/B} -radix bin {1 0ns}
+add_force {/decoder_E/C} -radix bin {0 0ns}
+add_force {/decoder_E/E} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+add_force {/decoder_E/B} -radix bin {1 0ns}
+add_force {/decoder_E/C} -radix bin {0 0ns}
+add_force {/decoder_E/E} -radix bin {1 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+add_force {/decoder_E/B} -radix bin {1 0ns}
+add_force {/decoder_E/C} -radix bin {1 0ns}
+add_force {/decoder_E/E} -radix bin {0 0ns}
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+add_force {/decoder_E/B} -radix bin {1 0ns}
+add_force {/decoder_E/C} -radix bin {1 0ns}
+add_force {/decoder_E/E} -radix bin {1 0ns}
+run 10 ns
+close_sim

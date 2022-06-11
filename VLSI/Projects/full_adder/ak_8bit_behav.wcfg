@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ak_8bit_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ak_8bit" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject db_ref_id="1" fp_name="/ak_8bit/X" type="array">
+      <obj_property name="ElementShortName">X[7:0]</obj_property>
+      <obj_property name="ObjectShortName">X[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ak_8bit/Y" type="array">
+      <obj_property name="ElementShortName">Y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ak_8bit/Ci" type="logic">
+      <obj_property name="ElementShortName">Ci</obj_property>
+      <obj_property name="ObjectShortName">Ci</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ak_8bit/ankit_sum" type="array">
+      <obj_property name="ElementShortName">ankit_sum[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ankit_sum[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ak_8bit/Co" type="logic">
+      <obj_property name="ElementShortName">Co</obj_property>
+      <obj_property name="ObjectShortName">Co</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/ak_8bit/m" type="logic">
+      <obj_property name="ElementShortName">m</obj_property>
+      <obj_property name="ObjectShortName">m</obj_property>
+   </wvobject>
+</wave_config>

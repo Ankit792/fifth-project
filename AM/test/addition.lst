@@ -1,0 +1,67 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;ADDITION OF 'N' 32 BIT NUMBERS.
+    2 00000000         
+    3 00000000                 area             nadd,code,readonly
+    4 00000000         ; export start
+    5 00000000         start
+    6 00000000 E3A00101        ldr              r0,=0x40000000
+    7 00000004 E3A02005        mov              r2,#05      ;number of 32 bit n
+                                                            o. to be added
+    8 00000008 E4903004        ldr              r3,[r0],#04
+    9 0000000C E4904004 
+                       back    ldr              r4,[r0],#04
+   10 00000010 E0833004        add              r3,r3,r4
+   11 00000014 E2522001        subs             r2,r2,#01
+   12 00000018 E3520000        cmp              r2,#00
+   13 0000001C 1AFFFFFA        bne              back
+   14 00000020 EAFFFFFE 
+                       stop    b                stop
+   15 00000024                 end
+Command Line: --debug --xref --apcs=interwork -oaddition.o -IC:\Keil\ARM\INC -I
+C:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=addition.lst additio
+n.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+back 0000000C
+
+Symbol: back
+   Definitions
+      At line 9 in file addition.asm
+   Uses
+      At line 13 in file addition.asm
+Comment: back used once
+nadd 00000000
+
+Symbol: nadd
+   Definitions
+      At line 3 in file addition.asm
+   Uses
+      None
+Comment: nadd unused
+start 00000000
+
+Symbol: start
+   Definitions
+      At line 5 in file addition.asm
+   Uses
+      None
+Comment: start unused
+stop 00000020
+
+Symbol: stop
+   Definitions
+      At line 14 in file addition.asm
+   Uses
+      At line 14 in file addition.asm
+Comment: stop used once
+4 symbols
+324 symbols in table

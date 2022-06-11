@@ -1,0 +1,649 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Oct 02 14:04:06 2021
+# Process ID: 9408
+# Log file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/vivado.log
+# Journal file: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:18 . Memory (MB): peak = 640.453 ; gain = 123.230
+update_compile_order -fileset sources_1
+set_property top decoder_B [current_fileset]
+update_compile_order -fileset sources_1
+set_property top decoder_B [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_C.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_C.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_D.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_D.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_E.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_E.v:1]
+INFO: [filemgmt 20-737] The module currently selected as top, "decoder_B", is instantiated more than once in this source hierarchy. All instantiation nodes will be indicated as top modules, however, only one unique set of source file(s) will be used for synthesis and implementation.
+[Sat Oct 02 14:08:11 2021] Launched synth_1...
+Run output will be captured here: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: decoder_B
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:21 ; elapsed = 00:04:57 . Memory (MB): peak = 648.871 ; gain = 490.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'decoder_B' [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v:23]
+INFO: [Synth 8-638] synthesizing module 'decoder_A' [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v:23]
+INFO: [Synth 8-256] done synthesizing module 'decoder_A' (1#1) [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v:23]
+WARNING: [Synth 8-3848] Net C in module/entity decoder_B does not have driver. [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v:39]
+INFO: [Synth 8-256] done synthesizing module 'decoder_B' (2#1) [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:23 ; elapsed = 00:04:59 . Memory (MB): peak = 672.742 ; gain = 514.012
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:23 ; elapsed = 00:04:59 . Memory (MB): peak = 672.742 ; gain = 514.012
+---------------------------------------------------------------------------------
+Loading clock regions from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from E:/vivado/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from E:/vivado/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from E:/vivado/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:44 ; elapsed = 00:05:20 . Memory (MB): peak = 1019.285 ; gain = 860.555
+6 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1019.285 ; gain = 374.750
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'decoder_B' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav'
+"xvlog -m64 -prj decoder_B_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto ace1d4d100474df093b0867723a86515 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot decoder_B_behav xil_defaultlib.decoder_B xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder_A
+Compiling module xil_defaultlib.decoder_B
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot decoder_B_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav/xsim.dir/decoder_B_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3679670232 -regid "210995377_0_0_247" -xml E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/si..."
+    (file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav/xsim.dir/decoder_B_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct 02 14:10:40 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 1022.688 ; gain = 1.090
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "decoder_B_behav -key {Behavioral:sim_1:Functional:decoder_B} -tclbatch {decoder_B.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source decoder_B.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'decoder_B_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 1032.723 ; gain = 11.125
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/decoder_B/A} -radix bin {0 0ns}
+add_force {/decoder_B/B} -radix bin {0 0ns}
+add_force {/decoder_B/E} -radix bin {00 0ns}
+run 10 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+add_bp E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v 41
+remove_bps -file E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v -line 41
+add_bp E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v 41
+close_design
+close_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1065.676 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1065.676 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_C.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_C.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_D.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_D.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_E.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_E.v:1]
+INFO: [filemgmt 20-737] The module currently selected as top, "decoder_B", is instantiated more than once in this source hierarchy. All instantiation nodes will be indicated as top modules, however, only one unique set of source file(s) will be used for synthesis and implementation.
+[Sat Oct 02 16:06:42 2021] Launched synth_1...
+Run output will be captured here: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: decoder_B
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:05 ; elapsed = 02:03:29 . Memory (MB): peak = 1065.676 ; gain = 906.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'decoder_B' [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v:23]
+INFO: [Synth 8-638] synthesizing module 'decoder_A' [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v:23]
+INFO: [Synth 8-256] done synthesizing module 'decoder_A' (1#1) [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v:23]
+INFO: [Synth 8-256] done synthesizing module 'decoder_B' (2#1) [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:06 ; elapsed = 02:03:31 . Memory (MB): peak = 1065.676 ; gain = 906.945
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:06 ; elapsed = 02:03:31 . Memory (MB): peak = 1065.676 ; gain = 906.945
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:03:20 ; elapsed = 02:03:47 . Memory (MB): peak = 1065.676 ; gain = 906.945
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1065.676 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'decoder_B' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav'
+"xvlog -m64 -prj decoder_B_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto ace1d4d100474df093b0867723a86515 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot decoder_B_behav xil_defaultlib.decoder_B xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder_A
+Compiling module xil_defaultlib.decoder_B
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot decoder_B_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav/xsim.dir/decoder_B_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2701850742 -regid "210995377_0_0_247" -xml E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/si..."
+    (file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav/xsim.dir/decoder_B_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct 02 16:09:41 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1070.227 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "decoder_B_behav -key {Behavioral:sim_1:Functional:decoder_B} -tclbatch {decoder_B.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source decoder_B.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'decoder_B_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1070.227 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/decoder_B/E} -radix bin {1 0ns}
+add_force {/decoder_B/A} -radix bin {0 0ns}
+add_force {/decoder_B/B} -radix bin {0 0ns}
+add_force {/decoder_B/C} -radix bin {0 0ns}
+run 10 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/decoder_B/E} -radix bin {1 0ns}
+force8
+add_force {/decoder_B/A} -radix bin {0 0ns}
+force9
+add_force {/decoder_B/B} -radix bin {0 0ns}
+force10
+add_force {/decoder_B/C} -radix bin {0 0ns}
+force11
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+force12
+add_force {/decoder_B/A} -radix bin {0 0ns}
+force13
+add_force {/decoder_B/B} -radix bin {0 0ns}
+force14
+add_force {/decoder_B/C} -radix bin {1 0ns}
+force15
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+force16
+add_force {/decoder_B/A} -radix bin {0 0ns}
+force17
+add_force {/decoder_B/B} -radix bin {1 0ns}
+force18
+add_force {/decoder_B/C} -radix bin {0 0ns}
+force19
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+force20
+add_force {/decoder_B/A} -radix bin {0 0ns}
+force21
+add_force {/decoder_B/B} -radix bin {1 0ns}
+force22
+add_force {/decoder_B/C} -radix bin {1 0ns}
+force23
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+force24
+add_force {/decoder_B/A} -radix bin {1 0ns}
+force25
+add_force {/decoder_B/B} -radix bin {0 0ns}
+force26
+add_force {/decoder_B/C} -radix bin {0 0ns}
+force27
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+force28
+add_force {/decoder_B/A} -radix bin {1 0ns}
+force29
+add_force {/decoder_B/B} -radix bin {0 0ns}
+force30
+add_force {/decoder_B/C} -radix bin {1 0ns}
+force31
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+force32
+add_force {/decoder_B/A} -radix bin {1 0ns}
+force33
+add_force {/decoder_B/B} -radix bin {1 0ns}
+force34
+add_force {/decoder_B/C} -radix bin {0 0ns}
+force35
+run 10 ns
+add_force {/decoder_B/E} -radix bin {1 0ns}
+force36
+add_force {/decoder_B/A} -radix bin {1 0ns}
+force37
+add_force {/decoder_B/B} -radix bin {1 0ns}
+force38
+add_force {/decoder_B/C} -radix bin {1 0ns}
+force39
+run 10 ns
+add_force {/decoder_B/E} -radix bin {0 0ns}
+force40
+add_force {/decoder_B/A} -radix bin {1 0ns}
+force41
+add_force {/decoder_B/B} -radix bin {1 0ns}
+force42
+add_force {/decoder_B/C} -radix bin {1 0ns}
+force43
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1074.734 ; gain = 0.000
+close_design
+set_property top decoder_E [current_fileset]
+update_compile_order -fileset sources_1
+set_property top decoder_E [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_C.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_C.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_D.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_D.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_E.v" into library work [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_E.v:1]
+[Sat Oct 02 16:28:09 2021] Launched synth_1...
+Run output will be captured here: E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: decoder_E
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:17 ; elapsed = 02:25:14 . Memory (MB): peak = 1074.734 ; gain = 916.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'decoder_E' [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_E.v:23]
+INFO: [Synth 8-638] synthesizing module 'decoder_B' [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v:23]
+INFO: [Synth 8-638] synthesizing module 'decoder_A' [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v:23]
+INFO: [Synth 8-256] done synthesizing module 'decoder_A' (1#1) [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v:23]
+INFO: [Synth 8-256] done synthesizing module 'decoder_B' (2#1) [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v:23]
+INFO: [Synth 8-256] done synthesizing module 'decoder_E' (3#1) [E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_E.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:19 ; elapsed = 02:25:16 . Memory (MB): peak = 1074.734 ; gain = 916.004
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:19 ; elapsed = 02:25:16 . Memory (MB): peak = 1074.734 ; gain = 916.004
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:04:35 ; elapsed = 02:25:33 . Memory (MB): peak = 1082.832 ; gain = 924.102
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1082.832 ; gain = 8.098
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'decoder_E' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav'
+"xvlog -m64 -prj decoder_E_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder_E.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_E
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto ace1d4d100474df093b0867723a86515 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot decoder_E_behav xil_defaultlib.decoder_E xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder_A
+Compiling module xil_defaultlib.decoder_B
+Compiling module xil_defaultlib.decoder_E
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot decoder_E_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav/xsim.dir/decoder_E_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3654786039 -regid "210995377_0_0_247" -xml E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/si..."
+    (file "E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav/xsim.dir/decoder_E_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct 02 16:31:53 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1087.789 ; gain = 4.957
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado/Vivado/2014.4/examples/Vivado_Tutorial/Projects/decoder/decoder.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "decoder_E_behav -key {Behavioral:sim_1:Functional:decoder_E} -tclbatch {decoder_E.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source decoder_E.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'decoder_E_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 1087.789 ; gain = 4.957
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/decoder_E/A} -radix bin {1 0ns}
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/decoder_E/A} -radix bin {0 0ns}
+add_force {/decoder_E/B} -radix bin {0 0ns}
+add_force {/decoder_E/C} -radix bin {0 0ns}
+add_force {/decoder_E/E} -radix bin {0 0ns}
+run 10 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/decoder_E/A} -radix bin {0 0ns}
+force49
+add_force {/decoder_E/B} -radix bin {0 0ns}
+force50
+add_force {/decoder_E/C} -radix bin {0 0ns}
+force51
+add_force {/decoder_E/E} -radix bin {0 0ns}
+force52
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+force53
+add_force {/decoder_E/B} -radix bin {0 0ns}
+force54
+add_force {/decoder_E/C} -radix bin {0 0ns}
+force55
+add_force {/decoder_E/E} -radix bin {1 0ns}
+force56
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+force57
+add_force {/decoder_E/B} -radix bin {0 0ns}
+force58
+add_force {/decoder_E/C} -radix bin {1 0ns}
+force59
+add_force {/decoder_E/E} -radix bin {0 0ns}
+force60
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+force61
+add_force {/decoder_E/B} -radix bin {0 0ns}
+force62
+add_force {/decoder_E/C} -radix bin {1 0ns}
+force63
+add_force {/decoder_E/E} -radix bin {1 0ns}
+force64
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+force65
+add_force {/decoder_E/B} -radix bin {1 0ns}
+force66
+add_force {/decoder_E/C} -radix bin {0 0ns}
+force67
+add_force {/decoder_E/E} -radix bin {0 0ns}
+force68
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+force69
+add_force {/decoder_E/B} -radix bin {1 0ns}
+force70
+add_force {/decoder_E/C} -radix bin {0 0ns}
+force71
+add_force {/decoder_E/E} -radix bin {1 0ns}
+force72
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+force73
+add_force {/decoder_E/B} -radix bin {1 0ns}
+force74
+add_force {/decoder_E/C} -radix bin {1 0ns}
+force75
+add_force {/decoder_E/E} -radix bin {0 0ns}
+force76
+run 10 ns
+add_force {/decoder_E/A} -radix bin {0 0ns}
+force77
+add_force {/decoder_E/B} -radix bin {1 0ns}
+force78
+add_force {/decoder_E/C} -radix bin {1 0ns}
+force79
+add_force {/decoder_E/E} -radix bin {1 0ns}
+force80
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+force81
+add_force {/decoder_E/B} -radix bin {0 0ns}
+force82
+add_force {/decoder_E/C} -radix bin {0 0ns}
+force83
+add_force {/decoder_E/E} -radix bin {0 0ns}
+force84
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+force85
+add_force {/decoder_E/B} -radix bin {0 0ns}
+force86
+add_force {/decoder_E/C} -radix bin {0 0ns}
+force87
+add_force {/decoder_E/E} -radix bin {1 0ns}
+force88
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+force89
+add_force {/decoder_E/B} -radix bin {0 0ns}
+force90
+add_force {/decoder_E/C} -radix bin {1 0ns}
+force91
+add_force {/decoder_E/E} -radix bin {0 0ns}
+force92
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+force93
+add_force {/decoder_E/B} -radix bin {0 0ns}
+force94
+add_force {/decoder_E/C} -radix bin {1 0ns}
+force95
+add_force {/decoder_E/E} -radix bin {1 0ns}
+force96
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+force97
+add_force {/decoder_E/B} -radix bin {1 0ns}
+force98
+add_force {/decoder_E/C} -radix bin {0 0ns}
+force99
+add_force {/decoder_E/E} -radix bin {0 0ns}
+force100
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+force101
+add_force {/decoder_E/B} -radix bin {1 0ns}
+force102
+add_force {/decoder_E/C} -radix bin {0 0ns}
+force103
+add_force {/decoder_E/E} -radix bin {1 0ns}
+force104
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+force105
+add_force {/decoder_E/B} -radix bin {1 0ns}
+force106
+add_force {/decoder_E/C} -radix bin {1 0ns}
+force107
+add_force {/decoder_E/E} -radix bin {0 0ns}
+force108
+run 10 ns
+add_force {/decoder_E/A} -radix bin {1 0ns}
+force109
+add_force {/decoder_E/B} -radix bin {1 0ns}
+force110
+add_force {/decoder_E/C} -radix bin {1 0ns}
+force111
+add_force {/decoder_E/E} -radix bin {1 0ns}
+force112
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1106.148 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 02 16:39:45 2021...

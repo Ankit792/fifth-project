@@ -1,0 +1,106 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             XYZ, CODE, READONLY
+    2 00000000                 EXPORT           START
+    3 00000000         START
+    4 00000000 E59F0034        LDR              R0, =DATA1
+    5 00000004 E59F1034        LDR              R1, =DATA2
+    6 00000008 E3A03005        MOV              R3, #0x05
+    7 0000000C E3A04000        MOV              R4, #0x00
+    8 00000010 E4902004 
+                       UP      LDR              R2,[R0], #4
+    9 00000014 E0824004        ADD              R4, R2, R4
+   10 00000018 E2533001        SUBS             R3, R3, #0x01
+   11 0000001C 1AFFFFFB        BNE              UP
+   12 00000020 E5814000        STR              R4,[R1]
+   13 00000024 EAFFFFFE 
+                       END1    B                END1
+   14 00000028 00000123 
+              00004541 
+              00001111 
+              00000220 
+              00005432 DATA1   DCD              0X123, 0X4541, 0X1111, 0X220, 0
+X5432
+   15 0000003C         
+   16 0000003C 00000000 
+              00000000         AREA             XYZ1, DATA, READWRITE
+   17 00000000 00000000 
+                       DATA2   DCD              0x00
+   18 00000004                 END
+Command Line: --debug --xref --apcs=interwork -olab3a.o -IC:\Keil\ARM\INC -IC:\
+Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" --list=lab3a.lst lab3a.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DATA1 00000028
+
+Symbol: DATA1
+   Definitions
+      At line 14 in file lab3a.asm
+   Uses
+      At line 4 in file lab3a.asm
+Comment: DATA1 used once
+END1 00000024
+
+Symbol: END1
+   Definitions
+      At line 13 in file lab3a.asm
+   Uses
+      At line 13 in file lab3a.asm
+Comment: END1 used once
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 3 in file lab3a.asm
+   Uses
+      At line 2 in file lab3a.asm
+Comment: START used once
+UP 00000010
+
+Symbol: UP
+   Definitions
+      At line 8 in file lab3a.asm
+   Uses
+      At line 11 in file lab3a.asm
+Comment: UP used once
+XYZ 00000000
+
+Symbol: XYZ
+   Definitions
+      At line 1 in file lab3a.asm
+   Uses
+      None
+Comment: XYZ unused
+5 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DATA2 00000000
+
+Symbol: DATA2
+   Definitions
+      At line 17 in file lab3a.asm
+   Uses
+      At line 5 in file lab3a.asm
+Comment: DATA2 used once
+XYZ1 00000000
+
+Symbol: XYZ1
+   Definitions
+      At line 16 in file lab3a.asm
+   Uses
+      None
+Comment: XYZ1 unused
+2 symbols
+329 symbols in table

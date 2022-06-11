@@ -1,0 +1,5 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../MUX_D.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
